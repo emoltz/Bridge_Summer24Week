@@ -1,2 +1,2 @@
 # Bridge 2022 -- Summer Extended 24 Week
-## This repo is for code examples done in office hours.
+Here is where all code from office hours will be stored so you can look back and review.
