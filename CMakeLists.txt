@@ -5,3 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Bridge_Summer24Week
         "Ethan OH/July6.cpp")
+
+add_executable(July20 "Ethan OH/July20.cpp")
