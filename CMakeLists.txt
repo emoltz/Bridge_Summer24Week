@@ -7,3 +7,4 @@ add_executable(Bridge_Summer24Week
         "Ethan OH/July6.cpp")
 
 add_executable(July20 "Ethan OH/July20.cpp")
+add_executable(July27 "Ethan OH/July27.cpp")
