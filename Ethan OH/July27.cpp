@@ -47,8 +47,16 @@ void switchStatement(){
     }
 }
 
+int times5(int n){
+    int result = n * 5;
+    return result;
+}
+
 
 int main(){
-    switchStatement();
+    int s = times5(10);
+    cout << s;
+
+
     return 0;
 }
