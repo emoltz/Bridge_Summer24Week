@@ -130,6 +130,37 @@ build July27: CXX_EXECUTABLE_LINKER__July27_Debug CMakeFiles/July27.dir/Ethan_OH
   TARGET_FILE = July27
   TARGET_PDB = July27.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Aug3
+
+
+#############################################
+# Order-only phony target for Aug3
+
+build cmake_object_order_depends_target_Aug3: phony || CMakeFiles/Aug3.dir
+
+build CMakeFiles/Aug3.dir/Ethan_OH/Aug3.cpp.o: CXX_COMPILER__Aug3_Debug /Users/ethanshafranmoltz/Documents/NYU/Bridge$ 2022/Summer$ 24$ Week/Code/Bridge_Summer24Week/Ethan$ OH/Aug3.cpp || cmake_object_order_depends_target_Aug3
+  DEP_FILE = CMakeFiles/Aug3.dir/Ethan_OH/Aug3.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Aug3.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aug3.dir/Ethan_OH
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Aug3
+
+
+#############################################
+# Link the executable Aug3
+
+build Aug3: CXX_EXECUTABLE_LINKER__Aug3_Debug CMakeFiles/Aug3.dir/Ethan_OH/Aug3.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Aug3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Aug3
+  TARGET_PDB = Aug3.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -164,7 +195,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ethanshafranmoltz/Documents/NYU/Bridge 2022/Summer 24 Week/Code/Bridge_Summer24Week/cmake-build-debug
 
-build all: phony Bridge_Summer24Week July20 July27
+build all: phony Bridge_Summer24Week July20 July27 Aug3
 
 # =============================================================================
 # Built-in targets
