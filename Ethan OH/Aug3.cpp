@@ -101,7 +101,7 @@ void doubleTriangle(int n) {
 
 int main() {
 
-
+//    makeTriangle(5);
 //    makeLetterTriangle(5);
     doubleTriangle(5);
     return 0;
