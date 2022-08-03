@@ -98,12 +98,23 @@ void doubleTriangle(int n) {
 
 }
 
+void letterNumber(){
+    string s = "57afh6461";
+    for (int i = 0; i < s.length(); i++) {
+         //IF the character is between 0 and 9, then print it
+         if (s[i] >= '0' && s[i] <= '9'){
+             cout << s[i];
+         }
+    }
+}
+
 
 int main() {
 
 //    makeTriangle(5);
 //    makeLetterTriangle(5);
-    doubleTriangle(5);
+//    doubleTriangle(5);
+    letterNumber();
     return 0;
 
 }
