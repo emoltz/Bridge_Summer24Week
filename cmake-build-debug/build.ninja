@@ -161,6 +161,37 @@ build Aug3: CXX_EXECUTABLE_LINKER__Aug3_Debug CMakeFiles/Aug3.dir/Ethan_OH/Aug3.
   TARGET_FILE = Aug3
   TARGET_PDB = Aug3.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target exam1review
+
+
+#############################################
+# Order-only phony target for exam1review
+
+build cmake_object_order_depends_target_exam1review: phony || CMakeFiles/exam1review.dir
+
+build CMakeFiles/exam1review.dir/Ethan_OH/exam1review.cpp.o: CXX_COMPILER__exam1review_Debug /Users/ethanshafranmoltz/Documents/NYU/Bridge$ 2022/Summer$ 24$ Week/Code/Bridge_Summer24Week/Ethan$ OH/exam1review.cpp || cmake_object_order_depends_target_exam1review
+  DEP_FILE = CMakeFiles/exam1review.dir/Ethan_OH/exam1review.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/exam1review.dir
+  OBJECT_FILE_DIR = CMakeFiles/exam1review.dir/Ethan_OH
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target exam1review
+
+
+#############################################
+# Link the executable exam1review
+
+build exam1review: CXX_EXECUTABLE_LINKER__exam1review_Debug CMakeFiles/exam1review.dir/Ethan_OH/exam1review.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/exam1review.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = exam1review
+  TARGET_PDB = exam1review.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -195,7 +226,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ethanshafranmoltz/Documents/NYU/Bridge 2022/Summer 24 Week/Code/Bridge_Summer24Week/cmake-build-debug
 
-build all: phony Bridge_Summer24Week July20 July27 Aug3
+build all: phony Bridge_Summer24Week July20 July27 Aug3 exam1review
 
 # =============================================================================
 # Built-in targets
