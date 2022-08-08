@@ -7,3 +7,6 @@ Week 2: https://nyu.zoom.us/rec/play/LDZG0Z5qBSdhECBNqOxD8w7GItASD_gbY6muSO7kJoL
 
 Week 3: https://nyu.zoom.us/rec/play/A8KLvU-PSA6kmaTR7weoGB4yVDHGtjswgCUnBCkbg53PyFqFgheYfoej1RmuSM-I1zpA-9hoAq0ps4jC.yZZm0mUC3AQqWe-E
 
+Week 4: https://nyu.zoom.us/rec/play/3XypUAThyD3_L32lrpqWNWYT5rZyq3zGwxTa-ztwnu8R8peXhZx2rVFkliCiyYGM_1iff6X8XZa81ohV.smWYW3g2OpgWXqLQ
+
+Exam 1 Review: https://nyu.zoom.us/rec/share/yrRnaONKRose8A03KFRDXZYHTrDruwNkZjp9lQzCRNOId2Nx0hvt8XWc6TaO89LA.f3DlNfYdjTjcdOD8
