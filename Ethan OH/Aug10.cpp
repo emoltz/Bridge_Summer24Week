@@ -10,14 +10,14 @@ int main(){
     char lowerCase = 'a';
     char upperCase = 'A';
     char space = ' ';
-    int n = (int)inLetter - (int)lowerCase + 1;
+    int numberOfLines = (int)inLetter - (int)lowerCase + 1;
 
-    int spaceLimit = n - 1;
+    int spaceLimit = numberOfLines - 1;
     int letterLimit = 1;
 
 
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < numberOfLines; i++) {
         //SPACES
         for (int j = 0; j < spaceLimit; j++) {
             cout << space;
