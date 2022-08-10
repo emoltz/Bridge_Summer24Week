@@ -192,6 +192,37 @@ build exam1review: CXX_EXECUTABLE_LINKER__exam1review_Debug CMakeFiles/exam1revi
   TARGET_FILE = exam1review
   TARGET_PDB = exam1review.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Aug10
+
+
+#############################################
+# Order-only phony target for Aug10
+
+build cmake_object_order_depends_target_Aug10: phony || CMakeFiles/Aug10.dir
+
+build CMakeFiles/Aug10.dir/Ethan_OH/Aug10.cpp.o: CXX_COMPILER__Aug10_Debug /Users/ethanshafranmoltz/Documents/NYU/Bridge$ 2022/Summer$ 24$ Week/Code/Bridge_Summer24Week/Ethan$ OH/Aug10.cpp || cmake_object_order_depends_target_Aug10
+  DEP_FILE = CMakeFiles/Aug10.dir/Ethan_OH/Aug10.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Aug10.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aug10.dir/Ethan_OH
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Aug10
+
+
+#############################################
+# Link the executable Aug10
+
+build Aug10: CXX_EXECUTABLE_LINKER__Aug10_Debug CMakeFiles/Aug10.dir/Ethan_OH/Aug10.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Aug10.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Aug10
+  TARGET_PDB = Aug10.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -226,7 +257,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ethanshafranmoltz/Documents/NYU/Bridge 2022/Summer 24 Week/Code/Bridge_Summer24Week/cmake-build-debug
 
-build all: phony Bridge_Summer24Week July20 July27 Aug3 exam1review
+build all: phony Bridge_Summer24Week July20 July27 Aug3 exam1review Aug10
 
 # =============================================================================
 # Built-in targets

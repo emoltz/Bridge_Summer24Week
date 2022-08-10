@@ -113,8 +113,8 @@ int main() {
 
 //    makeTriangle(5);
 //    makeLetterTriangle(5);
-//    doubleTriangle(5);
-    letterNumber();
+    doubleTriangle(5);
+//    letterNumber();
     return 0;
 
 }
