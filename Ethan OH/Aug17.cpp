@@ -16,6 +16,12 @@ int main() {
     char c[5] = {'h', 'e', 'l', 'l', 'o'};
     //the above two lines are the same
 
+
+    int arr[5] = {54, 13, 285, 58, 1};
+    for (int i = 0; i < 5; i++) {
+        cout << arr[i] << endl;
+    }
+
     char tab = '\t';
     cout << 1 << tab << 2 << tab << 3 << tab << endl;
     cout << "\n" << "hello!" << "\n";
