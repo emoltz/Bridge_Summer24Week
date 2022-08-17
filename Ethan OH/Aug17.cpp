@@ -1,17 +1,21 @@
 #include <iostream>
+
 using namespace std;
 
-int function1(bool isThisTrue){
+int function1(bool isThisTrue) {
     //any code here
-    if (isThisTrue){
+    if (isThisTrue) {
         return 0;
-    }
-    else{
+    } else {
         return 1;
     }
 }
 
-int main(){
+int main() {
+    string s = "hello";
+    char c[5] = {'h', 'e', 'l', 'l', 'o'};
+    //the above two lines are the same
+
     char tab = '\t';
     cout << 1 << tab << 2 << tab << 3 << tab << endl;
     cout << "\n" << "hello!" << "\n";
@@ -19,10 +23,9 @@ int main(){
     int a = 5;
     int b = 6;
 
-    if (a != b){
+    if (a != b) {
         cout << "They are the same";
-    }
-    else{
+    } else {
         cout << "They are different";
     }
 
