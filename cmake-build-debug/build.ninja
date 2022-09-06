@@ -316,6 +316,37 @@ build Aug31: CXX_EXECUTABLE_LINKER__Aug31_Debug CMakeFiles/Aug31.dir/Ethan_OH/Au
   TARGET_FILE = Aug31
   TARGET_PDB = Aug31.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Sep6
+
+
+#############################################
+# Order-only phony target for Sep6
+
+build cmake_object_order_depends_target_Sep6: phony || CMakeFiles/Sep6.dir
+
+build CMakeFiles/Sep6.dir/Ethan_OH/Sep6.cpp.o: CXX_COMPILER__Sep6_Debug /Users/ethanshafranmoltz/Documents/NYU/Bridge$ 2022/Summer$ 24$ Week/Code/Bridge_Summer24Week/Ethan$ OH/Sep6.cpp || cmake_object_order_depends_target_Sep6
+  DEP_FILE = CMakeFiles/Sep6.dir/Ethan_OH/Sep6.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Sep6.dir
+  OBJECT_FILE_DIR = CMakeFiles/Sep6.dir/Ethan_OH
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sep6
+
+
+#############################################
+# Link the executable Sep6
+
+build Sep6: CXX_EXECUTABLE_LINKER__Sep6_Debug CMakeFiles/Sep6.dir/Ethan_OH/Sep6.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Sep6.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Sep6
+  TARGET_PDB = Sep6.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -350,7 +381,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ethanshafranmoltz/Documents/NYU/Bridge 2022/Summer 24 Week/Code/Bridge_Summer24Week/cmake-build-debug
 
-build all: phony Bridge_Summer24Week July20 July27 Aug3 exam1review Aug10 Aug17 Aug24 Aug31
+build all: phony Bridge_Summer24Week July20 July27 Aug3 exam1review Aug10 Aug17 Aug24 Aug31 Sep6
 
 # =============================================================================
 # Built-in targets
