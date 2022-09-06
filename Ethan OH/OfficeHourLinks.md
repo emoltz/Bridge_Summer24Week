@@ -14,3 +14,5 @@ Exam 1 Review: https://nyu.zoom.us/rec/share/yrRnaONKRose8A03KFRDXZYHTrDruwNkZjp
 Week 5: https://nyu.zoom.us/rec/play/JM_Y-ramy5R3_i5YuRyg-ZAVZtOYi9HVBXnfZ7xkgT2mclghNm8a9Kek5JMFa986TIbwcTeodFI9jqwB.wlCDg0uJHfd8RLkm
 
 Week 6: https://nyu.zoom.us/rec/play/dSkX_9rkFGiJRJ40VvEfTMiWDw-ss98JBaKO1W5hU30C0Y2i_PW43puIwm-asfAesXK88rLqsdgSd6Hm.bbFPP2_V0R_9nO72
+
+Week 7: 
