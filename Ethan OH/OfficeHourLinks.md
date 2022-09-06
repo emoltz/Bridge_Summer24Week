@@ -15,4 +15,4 @@
 
 `Week 6`: https://nyu.zoom.us/rec/play/dSkX_9rkFGiJRJ40VvEfTMiWDw-ss98JBaKO1W5hU30C0Y2i_PW43puIwm-asfAesXK88rLqsdgSd6Hm.bbFPP2_V0R_9nO72
 
-`Week 7`: 
+`Week 7`: https://nyu.zoom.us/recording/detail?meeting_id=7iN%2FoBkrS6ugdStY8%2FaM%2FQ%3D%3D

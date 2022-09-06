@@ -16,8 +16,6 @@ void introPointers(){
 
 //    cout << pointer << endl << &x << endl << &n;
 
-
-
 }
 
 void doublePointer(){
