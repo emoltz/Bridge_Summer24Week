@@ -347,6 +347,37 @@ build Sep6: CXX_EXECUTABLE_LINKER__Sep6_Debug CMakeFiles/Sep6.dir/Ethan_OH/Sep6.
   TARGET_FILE = Sep6
   TARGET_PDB = Sep6.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Sep13
+
+
+#############################################
+# Order-only phony target for Sep13
+
+build cmake_object_order_depends_target_Sep13: phony || CMakeFiles/Sep13.dir
+
+build CMakeFiles/Sep13.dir/Ethan_OH/Sep13.cpp.o: CXX_COMPILER__Sep13_Debug /Users/ethanshafranmoltz/Documents/NYU/Bridge$ 2022/Summer$ 24$ Week/Code/Bridge_Summer24Week/Ethan$ OH/Sep13.cpp || cmake_object_order_depends_target_Sep13
+  DEP_FILE = CMakeFiles/Sep13.dir/Ethan_OH/Sep13.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Sep13.dir
+  OBJECT_FILE_DIR = CMakeFiles/Sep13.dir/Ethan_OH
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sep13
+
+
+#############################################
+# Link the executable Sep13
+
+build Sep13: CXX_EXECUTABLE_LINKER__Sep13_Debug CMakeFiles/Sep13.dir/Ethan_OH/Sep13.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Sep13.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Sep13
+  TARGET_PDB = Sep13.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -381,7 +412,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ethanshafranmoltz/Documents/NYU/Bridge 2022/Summer 24 Week/Code/Bridge_Summer24Week/cmake-build-debug
 
-build all: phony Bridge_Summer24Week July20 July27 Aug3 exam1review Aug10 Aug17 Aug24 Aug31 Sep6
+build all: phony Bridge_Summer24Week July20 July27 Aug3 exam1review Aug10 Aug17 Aug24 Aug31 Sep6 Sep13
 
 # =============================================================================
 # Built-in targets
