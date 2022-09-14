@@ -232,7 +232,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "/Users/ethanshafranmoltz/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.25/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S"/Users/ethanshafranmoltz/Documents/NYU/Bridge 2022/Summer 24 Week/Code/Bridge_Summer24Week" -B"/Users/ethanshafranmoltz/Documents/NYU/Bridge 2022/Summer 24 Week/Code/Bridge_Summer24Week/cmake-build-debug"
+  command = "/Users/ethanshafranmoltz/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.3739.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S"/Users/ethanshafranmoltz/Documents/NYU/Bridge 2022/Summer 24 Week/Code/Bridge_Summer24Week" -B"/Users/ethanshafranmoltz/Documents/NYU/Bridge 2022/Summer 24 Week/Code/Bridge_Summer24Week/cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 
@@ -241,7 +241,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = "/Users/ethanshafranmoltz/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.25/CLion.app/Contents/bin/ninja/mac/ninja" $FILE_ARG -t clean $TARGETS
+  command = "/Users/ethanshafranmoltz/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.3739.54/CLion.app/Contents/bin/ninja/mac/ninja" $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -249,6 +249,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = "/Users/ethanshafranmoltz/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.25/CLion.app/Contents/bin/ninja/mac/ninja" -t targets
+  command = "/Users/ethanshafranmoltz/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.3739.54/CLion.app/Contents/bin/ninja/mac/ninja" -t targets
   description = All primary targets available:
 
