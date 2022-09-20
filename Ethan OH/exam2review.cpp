@@ -42,16 +42,18 @@ void moveZeroes(int nums[], int n){
     }
 }
 
-int maxZeroLength(int nums[], int len, int startIdx){
-    //base case -->
-    if (startIdx == len){
+int maxZeroLengthRecursive(int nums[], int len, int startIdx){
+    if (len == startIdx){
         return 0;
     }
-    int maxLen = 0;
-    while(startIdx < len && nums[startIdx++] == 0){
-        maxLen++;
-        return max(maxLen, maxZeroLength(nums, len, startIdx));
+    int temp1 = 0, temp2 = 0;
+    if (nums[startIdx] == 0){
+        temp1 = maxZeroLengthRecursive(nums, len, startIdx + 1) + 1;
     }
+    else{
+        temp2 = maxZeroLengthRecursive(nums, len, startIdx + 1);
+    }
+    return max(temp1, temp2);
 }
 
 
