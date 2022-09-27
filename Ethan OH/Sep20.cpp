@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int countZeroes(int nums[], int len, int startIdx){
@@ -65,10 +66,46 @@ int maxZeroLength(int arr[], int size, int num){
     }
 }
 
+int palindromeDistance(int* arr, int n){
+//    if (n == 2){
+//        //compare elements. If the same, if so, do nothing, if not then increment return value
+//    }
+
+    if (n == 0){
+        return 0;
+    }
+    else{
+        int first = arr[0];
+        int last = arr[n-1];
+
+        if (first == last){
+            return palindromeDistance(arr + 1, n - 2);
+        }
+        else{
+            //not mirrored, so we want to keep track of how many items we've hit
+            return palindromeDistance(arr + 1, n - 2) + 1;
+        }
+    }
+}
+
+//CHALLENGE: double palindrome question
+
+int func(int n){
+    int i, j, count;
+
+    count = 0;
+    for (i = 1; i <= log(n); i *= 2){
+        cout << "i: " << i << " | ";
+        for (j = 1; j <= i; j++){
+            count += 1;
+            cout << "  " << count;
+        }
+        cout << endl;
+    }
+}
 
 
 int main(){
-    int arr[6] = {0, 0, 1, 0 , 0 ,0};
-    cout << maxZeroLength(arr, 6, 0);
+    func(100);
     return 0;
 }
