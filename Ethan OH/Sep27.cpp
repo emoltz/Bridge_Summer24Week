@@ -30,12 +30,16 @@ public:
         _age = s;
     }
 
-    int getAge() {
+     int getAge() {
         return _age;
     }
 
     void setName(string s) {
         _name = s;
+    }
+
+    virtual void speak(){
+        cout << "DEFAULT!";
     }
 
     string getName();
@@ -74,6 +78,9 @@ public:
         delete arr;
     }
 
+    void speak() override{
+        cout << "Woof!";
+    }
     //GETTERS AND SETTERS
     int getHumanAge() {
         return humanAge;
@@ -86,10 +93,6 @@ public:
     //FUNCTIONS
     int calculateHumanAge(int dogAge) {
         humanAge = dogAge * 7;
-    }
-
-    void speak() {
-        cout << "Woof!";
     }
 
 };
@@ -124,8 +127,8 @@ int main() {
     Pet one;
     one.setAge(5);
     one.setName("Crunchy");
+    one.speak();
 
-    cout << one;
 
     return 0;
 }
