@@ -39,6 +39,8 @@ public:
             delete here;
             here = next;
         }
+
+        cout << "the list has been cleared!";
     }
 
     void addNode(int n) {
@@ -91,7 +93,38 @@ public:
             displayRecursive(itr->_next);
         }
     }
+
+    bool search(int x){
+        Node *itr = _head;
+        while(itr != nullptr){
+            if(itr->_data == x){
+                return true;
+            }
+            else{
+                //we haven't found it!
+                itr = itr->_next;
+            }
+        }
+        return false;
+    }
+
 };
+
+template <class T>
+T addNumbers(T x, T y){
+    return x + y;
+}
+
+template <class T, class K>
+vector<K> addNumbers(T x, K y){
+
+}
+
+
+void MergeSortedIntervals(vector<int> &v, int l, int m, int r){
+    //
+}
+
 
 
 int main() {
@@ -100,6 +133,8 @@ int main() {
     l.addNode(5);
     l.addNode(10);
     l.display();
+    vector<int> k;
+
 
     return 0;
 }
