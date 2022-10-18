@@ -20,6 +20,13 @@ using namespace std;
  *
  */
 
+int random(int min, int max) {
+    //seed the random number
+    srand(static_cast<unsigned int>(time(nullptr)));
+    int random_number = rand() % (max - min + 1) + min;
+    return random_number;
+}
+
 class Thing1;
 
 class Thing2;
@@ -95,15 +102,15 @@ public:
 
     //GETTERS AND SETTERS
 
-    double getArea() const{
+    double getArea() const {
         return _area;
     }
 
-    void setArea(int a){
+    void setArea(int a) {
         _area = a;
     }
 
-    int getWidth() const{
+    int getWidth() const {
         return _width;
     }
 
@@ -111,7 +118,7 @@ public:
         _width = w;
     }
 
-    int getHeight() const{
+    int getHeight() const {
         return _height;
     }
 
@@ -142,45 +149,47 @@ public:
         return this->getArea();
     }
 
-    bool operator < (Triangle &t1){ //using const here will only allow you to use const functions!
-        if (this->area() < t1.area()){
+    bool operator<(Triangle &t1) { //using const here will only allow you to use const functions!
+        if (this->area() < t1.area()) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
 
-    Triangle operator + (Triangle &t1){
+    Triangle operator+(Triangle &t1) {
         Triangle temp;
         //add the area together
         temp.setArea(this->area() + t1.area());
         return temp;
     }
 
-    bool operator == (const Triangle &t1){
-        if (this->getHeight() == t1.getHeight() && this->getWidth() == t1.getWidth()){
+    bool operator==(const Triangle &t1) {
+        if (this->getHeight() == t1.getHeight() && this->getWidth() == t1.getWidth()) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
 
-    friend ostream& operator << (ostream& myOstreamObject, const Triangle &t1){
-        if(t1.getWidth() == 0 || t1.getHeight() == 0 || t1.getArea() == 0){
+    friend ostream &operator<<(ostream &myOstreamObject, const Triangle &t1) {
+        if (t1.getWidth() == 0 || t1.getHeight() == 0 || t1.getArea() == 0) {
             myOstreamObject << "Please make a proper instance of this class!" << endl;
-        }
-        else{
-            myOstreamObject << "Height: " << t1.getHeight() << endl << "Width: " << t1.getWidth() << endl << "Area: " << t1.getArea();
+        } else {
+            myOstreamObject << "Height: " << t1.getHeight() << endl << "Width: " << t1.getWidth() << endl << "Area: "
+                            << t1.getArea();
         }
         return myOstreamObject;
     }
 
 };
 
-
-
+ostream& operator << (ostream &outs, const vector<Triangle> t){
+    //do a for loop
+    for (int i = 0; i < t.size(); i++) {
+        cout << t[i] << endl;
+    }
+}
 
 class Rectangle : public Shape {
 private:
@@ -207,13 +216,28 @@ public:
 };
 
 int main() {
+//    srand((time(nullptr)));
+//    Triangle t(5, 10);
+//    Triangle s(100, 100);
+//    s.area();
+//
+//    cout << s;
 
-    Triangle t(5, 10);
-    Triangle s(100, 100);
-    s.area();
 
-    cout << s;
+//    for (int i = 0; i < 10; i++) {
+//
+//        cout << rand() % 5 + 1;
+//        cout << endl;
+//    }
 
+//    cout << random(1, 5);
+
+    vector<int> v = {1, 2, 3, 4};
+    vector<Triangle> t;
+    Triangle a(10, 10);
+    a.area();
+    t.push_back(a);
+    cout << t;
 
 
     return 0;
